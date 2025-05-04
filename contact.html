@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechHive - Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-image: url('https://images.pexels.com/photos/3345882/pexels-photo-3345882.jpeg');
+      color: #333;
+    }
+    header, footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 1.5em;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00d8ff;
+    }
+    main {
+      max-width: 600px;
+      margin: 3em auto;
+      background: white;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    label {
+      font-weight: 500;
+    }
+    input, textarea {
+      padding: 0.75em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.2s;
+    }
+    input:focus, textarea:focus {
+      border-color: #00d8ff;
+      outline: none;
+    }
+    button {
+      background: #00d8ff;
+      border: none;
+      color: white;
+      padding: 0.75em;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #00c0e0;
+    }
+  </style>
+  <script>
+    function handleContact(event) {
+      event.preventDefault();
+      alert("Thank you for contacting TechHive! We'll get back to you shortly.");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TechHive</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form onsubmit="handleContact(event)">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechHive. We’re here to help.</p>
+  </footer>
+</body>
+</html>

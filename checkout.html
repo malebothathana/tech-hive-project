@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechHive - Checkout</title>
+  <style>
+    body { font-family: Arial; margin: 0; padding: 0; }
+    header, footer { background: #111; color: white; text-align: center; padding: 1em; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; }
+    main { padding: 2em; max-width: 600px; margin: auto; }
+    form { display: flex; flex-direction: column; gap: 1em; }
+    input, select { padding: 0.5em; font-size: 1em; }
+    button { background: #00d8ff; border: none; padding: 0.7em; color: white; cursor: pointer; }
+  </style>
+  <script>
+    function handleCheckout(event) {
+      event.preventDefault();
+      alert("Thank you for your purchase! Your order is being processed.");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TechHive</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Checkout</h2>
+    <form onsubmit="handleCheckout(event)">
+      <label>Full Name:
+        <input type="text" required />
+      </label>
+      <label>Email:
+        <input type="email" required />
+      </label>
+      <label>Shipping Address:
+        <input type="text" required />
+      </label>
+      <label>Payment Method:
+        <select required>
+          <option value="">Select</option>
+          <option>Credit Card</option>
+          <option>PayPal</option>
+          <option>Bank Transfer</option>
+        </select>
+      </label>
+      <label>Card Number:
+        <input type="text" maxlength="16" required />
+      </label>
+      <button type="submit">Complete Purchase</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechHive. All rights reserved.</p>
+  </footer>
+</body>
+</html>

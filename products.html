@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechHive - Products</title>
+  <style>
+    body { font-family: Arial; margin: 0; padding: 0; }
+    header, footer { background: #111; color: white; text-align: center; padding: 1em; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; }
+    .product-list { display: flex; flex-wrap: wrap; justify-content: center; padding: 2em; gap: 1em; }
+    .product { border: 1px solid #ccc; padding: 1em; width: 220px; text-align: center; }
+    .product img { width: 100%; height: auto; }
+    .product button { background: #00d8ff; border: none; padding: 0.5em 1em; color: white; cursor: pointer; }
+    .checkout-link { text-align: center; margin-top: 2em; }
+    .checkout-link a { background: #111; color: white; padding: 0.8em 1.5em; text-decoration: none; border-radius: 5px; }
+    @media (max-width: 600px) { .product-list { flex-direction: column; align-items: center; } }
+  </style>
+  <script>
+    function addToCart(productName) {
+      alert(productName + " has been added to your cart!");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TechHive</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="product-list">
+    <!-- Repeat block for each product -->
+    <div class="product">
+      <img src="https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg" alt="Smartphone X">
+      <h3>Smartphone X</h3>
+      <p>$799</p>
+      <button onclick="addToCart('Smartphone X')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg" alt="Laptop Pro 15">
+      <h3>Laptop Pro 15"</h3>
+      <p>$1299</p>
+      <button onclick="addToCart('Laptop Pro 15')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg" alt="Wireless Earbuds">
+      <h3>Wireless Earbuds</h3>
+      <p>$149</p>
+      <button onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/1334602/pexels-photo-1334602.jpeg" alt="Smartwatch Z">
+      <h3>Smartwatch Z</h3>
+      <p>$199</p>
+      <button onclick="addToCart('Smartwatch Z')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/13791390/pexels-photo-13791390.jpeg" alt="Gaming Laptop G5">
+      <h3>Gaming Laptop G5</h3>
+      <p>$1599</p>
+      <button onclick="addToCart('Gaming Laptop G5')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/14464048/pexels-photo-14464048.jpeg" alt="Tablet Plus 10">
+      <h3>Tablet Plus 10"</h3>
+      <p>$499</p>
+      <button onclick="addToCart('Tablet Plus 10')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/9767549/pexels-photo-9767549.jpeg" alt="Bluetooth Speaker">
+      <h3>Bluetooth Speaker</h3>
+      <p>$89</p>
+      <button onclick="addToCart('Bluetooth Speaker')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/7952558/pexels-photo-7952558.jpeg" alt="Wireless Charger">
+      <h3>Wireless Charger</h3>
+      <p>$39</p>
+      <button onclick="addToCart('Wireless Charger')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/4259950/pexels-photo-4259950.jpeg" alt="4K Action Camera">
+      <h3>4K Action Camera</h3>
+      <p>$299</p>
+      <button onclick="addToCart('4K Action Camera')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.pexels.com/photos/30708285/pexels-photo-30708285/free-photo-of-usb-c-hub-on-dark-surface-with-usb-ports.jpeg" alt="USB-C Hub">
+      <h3>USB-C Hub</h3>
+      <p>$59</p>
+      <button onclick="addToCart('USB-C Hub')">Add to Cart</button>
+    </div>
+  </main>
+
+  <div class="checkout-link">
+    <a href="checkout.html">Go to Checkout</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TechHive. All rights reserved.</p>
+  </footer>
+</body>
+</html>
